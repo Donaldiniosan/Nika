@@ -3,14 +3,14 @@
 
 // Core
 constexpr long OFF_REGION = 0x140000000; //[Static]->Region
-constexpr long OFF_LEVEL = 0x16f9090; //[Miscellaneous]->LevelName
-constexpr long OFF_LOCAL_PLAYER = 0x2182bf8; //[Miscellaneous]->LocalPlayer
-constexpr long OFF_ENTITY_LIST = 0x1DD40F8; //[Miscellaneous]->cl_entitylist
+constexpr long OFF_LEVEL = 0x16f9140; //[Miscellaneous]->LevelName
+constexpr long OFF_LOCAL_PLAYER = 0x2182c78; //[Miscellaneous]->LocalPlayer
+constexpr long OFF_ENTITY_LIST = 0x1DD4178; //[Miscellaneous]->cl_entitylist
 constexpr long OFF_GLOBAL_VARS = 0x16f8b90; //[Miscellaneous]->GlobalVars
 
 // Buttons
 constexpr long OFF_IN_ATTACK = 0x073f2798; //[Buttons]->in_attack
-constexpr long OFF_IN_JUMP = 0x073f2878; //[Buttons]->in_jump
+constexpr long OFF_IN_JUMP = 0x073f2890; //[Buttons]->in_jump
 constexpr long OFF_IN_DUCK = 0x073f2978; //[Buttons]->in_duck
 constexpr long OFFSET_IN_FORWARD = 0x073f26c8; //[Buttons]->in_forward
 constexpr long OFFSET_TRAVERSAL_START_TIME = 0x2af0; //[RecvTable.DT_LocalPlayerExclusive]->m_traversalStartTime
@@ -56,8 +56,8 @@ constexpr long OFF_SKIN = 0x0d58; //[RecvTable.DT_BaseAnimating]->m_nSkin
 constexpr long OFF_WEAPON_DISCARDED = 0x1599; //[RecvTable.DT_WeaponX]->m_discarded
 constexpr long OFFSET_TIME_BASE = 0x2088; //[RecvTable.DT_Player]->m_currentFramePlayer.timeBase
 
-constexpr long OFF_PROJECTILESCALE = 0x1eac; //CWeaponX!m_flProjectileScale //[WeaponSettings]->projectile_gravity_scale + [WeaponSettingsMeta].base
-constexpr long OFF_PROJECTILESPEED = 0x1ea4; //CWeaponX!m_flProjectileSpeed //[WeaponSettings]->projectile_launch_speed + [WeaponSettingsMeta].base
+constexpr long OFF_PROJECTILESCALE = 0x04ec + 0x19c0; //CWeaponX!m_flProjectileScale //[WeaponSettings]->projectile_gravity_scale + [WeaponSettingsMeta].base
+constexpr long OFF_PROJECTILESPEED = 0x04e4 + 0x19c0; //CWeaponX!m_flProjectileSpeed //[WeaponSettings]->projectile_launch_speed + [WeaponSettingsMeta].base
 
 // Glow
 constexpr long HIGHLIGHT_TYPE_SIZE = 0x34;
